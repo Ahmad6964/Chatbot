@@ -1,0 +1,101 @@
+.chat-card {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  align-items: center;
+  height: 450px;
+  width: 320px;
+  background-color: #223952;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.chat-card:hover {
+  transform: translateY(-5px);
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.text {
+  font-size: 14px;
+  color: #333;
+}
+.card-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.header-logo-text {
+  margin-left: 50px;
+}
+.logo {
+  align-self: flex-start;
+  width: 30px;
+  height: 30px;
+}
+.agent-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+ .hide-button {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+} 
+
+.icon-container {
+  position: absolute;
+  top: -50px; 
+  right: 5px; 
+  z-index: 1;
+  background-color: #223952;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active-chat-dot {
+  color: rgb(23, 219, 23);
+  padding-top: 8px;
+  font-size: 25px;
+
+}
+
+
+/* Responsive code */
+
+/* @media (max-width: 600px) {
+  .chat-card {
+    width: 100%; 
+    height: auto; 
+    margin-top: 10px; 
+    
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .chat-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .chat-card {
+    width: 33%; 
+  }
+} */

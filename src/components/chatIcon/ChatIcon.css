@@ -1,0 +1,84 @@
+    .img {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .chatbot-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .status-card {
+      background-color: white;
+      border-radius: 5px;
+      /* display: flex; */
+      margin-right: 17px;
+      align-items: center;
+      padding: 10px;
+      animation: fadeInOut 2s infinite;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .status-card:hover {
+      animation: none;
+    }
+
+    .close-button {
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #949494;
+      color: white;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      z-index: 2;
+    }
+
+    .status-text {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 10px solid white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+    }
+
+    /* ... other CSS rules ... */
+    .assist-text {
+      font-size: 12px;
+    }
+
+    .chatbot-icon {
+      width: 85px;
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
